@@ -19,7 +19,6 @@ ul {
 
 a {
     text-decoration: none;
-    color: #000;
 }
 
 a:hover {
@@ -37,20 +36,39 @@ a:hover {
     border-radius: 5px;
 }
 
+.bar {
+    width: 100%;
+    background: #f3f3f3;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+}
+
 #navbar {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     padding-top: 20px;
     font-size: 0.8rem;
 }
 
 #navbar ul {
     display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 #navbar ul li {
-    display: inline-block;
     margin-right: 20px;
+    color: black;
+}
+
+#navbar ul li a {
+    color: black;
+}
+
+#navbar ul li a.btn-solid-blue {
+    color: white;
 }
 
 #main {
@@ -112,6 +130,37 @@ a:hover {
 
 #main-content #language a {
     color: rgb(41, 101, 212);
+}
+
+#footer {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+#footer h5,
+#footer a {
+    color: gray;
+}
+
+#footer #other-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+#footer #left-content {
+    display: flex;
+}
+
+#footer #right-content {
+    display: flex;
+}
+
+#footer #left-content h5,
+#footer #right-content h5 {
+    padding: 0 10px;
 }
 
 
