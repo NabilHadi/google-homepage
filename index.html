@@ -4,43 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>My Google Page</title>
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <ul>
             <li><a href="#">Gmail</a></li>
             <li><a href="#">Images</a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#">Sign in</a></li>
+            <li><a href="#">icon</a></li>
+            <li><a class="btn-solid-blue" href="#">Sign in</a></li>
         </ul>
     </nav>
-  <main>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-    <form>
-        <input type="text" id="search-input" name="search-input">
-        <input type="submit" value="Google Search">
-        <input type="submit" value="I'm Feeling Lucky">
-    </form>
-    <div>
-        <h6>Google offered in: <a href="#">Language</a></h6>
-    </div>
+  <main id="main">
+      <div id="main-content">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+        <form>
+            <input type="text" id="search-input" name="search-input">
+            <input type="submit" value="Google Search">
+            <input type="submit" value="I'm Feeling Lucky">
+        </form>
+        <div>
+            <h6>Google offered in: <a href="#">Language</a></h6>
+        </div>
+      </div>
   </main>
-  <footer>
-      <div>
+  <footer id="footer">
+      <div id="location-bar" class="bar">
           <h5>Loctaion</h5>
       </div>
-      <div>
-          <h5><a href="#">About</a></h5>
-          <h5><a href="#">Advertising</a></h5>
-          <h5><a href="#">Business</a></h5>
-          <h5><a href="#">How Search works</a></h5>
-      </div>
-      <div>
-        <h5><a href="#">Privacy</a></h5>
-        <h5><a href="#">Terms</a></h5>
-        <h5><a href="#">Settings</a></h5>
-    </div>
+      <div id="other-bar" class="bar">
+          <div id="left-content">
+            <h5><a href="#">About</a></h5>
+            <h5><a href="#">Advertising</a></h5>
+            <h5><a href="#">Business</a></h5>
+            <h5><a href="#">How Search works</a></h5>
+          </div>
+          <div id="right-content">
+            <h5><a href="#">Privacy</a></h5>
+            <h5><a href="#">Terms</a></h5>
+            <h5><a href="#">Settings</a></h5>
+          </div>
+      </div>      
   </footer>
 </body>
 </html>
