@@ -10,8 +10,6 @@ body {
   color: #000;
   background-color: #fff;
   height: 100vh;
-  position: relative;
-  flex-direction: column;
 }
 
 ul {
@@ -44,12 +42,19 @@ a:hover {
   padding: 10px 20px;
 }
 
+#body-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 #navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-top: 20px;
   font-size: 0.8rem;
+  flex: 0;
 }
 
 #navbar ul {
@@ -73,16 +78,22 @@ a:hover {
 }
 
 #main {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 800x;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main #main-image-container {
+  margin-bottom: 30px;
 }
 
 #main-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -90,11 +101,19 @@ a:hover {
   margin-bottom: 40px;
 }
 
+#main-content form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #main-content form #search-input {
   display: block;
   background: #fafafa;
-  width: 500px;
   height: 40px;
+  width: 50%;
   border: 1px #ddd solid;
   border-radius: 20px;
   margin-bottom: 30px;
@@ -134,10 +153,9 @@ a:hover {
 }
 
 #footer {
-  position: absolute;
-  bottom: 0%;
   width: 100%;
   font-size: 1.1rem;
+  flex: 0;
 }
 
 #footer h5,
@@ -148,6 +166,8 @@ a:hover {
 #footer #other-bar {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 1.8;
   padding: 10px 20px;
 }
 
