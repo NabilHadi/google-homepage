@@ -37,6 +37,7 @@ a:hover {
 }
 
 .btn-solid-blue {
+  display: inline-block;
   padding: 9px 25px;
   background-color: rgb(41, 101, 212);
   color: white;
@@ -56,6 +57,10 @@ a:hover {
   flex-direction: column;
 }
 
+#body-container.width1300 {
+  min-width: 1300px;
+}
+
 #navbar {
   display: flex;
   justify-content: flex-end;
@@ -65,7 +70,7 @@ a:hover {
   flex-shrink: 1;
 }
 
-#navbar ul {
+#navbar-ul {
   display: flex;
   align-items: center;
   text-align: center;
@@ -73,17 +78,17 @@ a:hover {
   height: 100%;
 }
 
-#navbar ul li {
+#navbar-ul li {
   margin-right: 20px;
 }
 
-#navbar ul li a.navbar-btns {
+#navbar-ul li a.navbar-btns {
   color: #000;
   opacity: 0.8;
   height: 25px;
 }
 
-#navbar ul li a svg {
+#navbar-ul li a svg {
   opacity: inherit;
   display: block;
   height: 25px;
@@ -121,45 +126,44 @@ a:hover {
   align-items: center;
 }
 
-#main-content form #search-input {
+#search-input {
   display: flex;
   align-items: center;
   border: 1px #ddd solid;
   border-radius: 20px;
-  margin-bottom: 30px;
   padding: 0 15px;
   width: 60%;
+  max-width: 600px;
 }
 
-#main-content form #search-input a {
+#search-input a {
   display: inline-block;
 }
 
-#main-content form #search-input svg {
+#search-input svg {
   display: block;
   opacity: 0.5;
   height: 20px;
 }
 
-#main-content form #search-input svg.mic-btn {
+#search-input svg.mic-btn {
   opacity: 1;
   height: 25px;
 }
 
-#main-content form #search-input input {
+#search-input input {
   display: block;
   background: #fff;
   width: 100%;
   padding: 12px;
   border: none;
-  border-radius: inherit;
 }
 
-#main-content form #search-input input:focus {
+#search-input input:focus {
   outline: none;
 }
 
-#main-content form #search-input:hover {
+#search-input:hover {
   box-shadow: 1px 1px 1px 1px #bbb;
 }
 
@@ -168,6 +172,7 @@ a:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 30px;
 }
 
 #main-content form .search-btn {
@@ -181,6 +186,61 @@ a:hover {
 
 #main-content #main-language-offered-text a {
   color: rgb(41, 101, 212);
+}
+
+/* Search Page */
+.header {
+  flex-basis: 100px;
+  flex-grow: 1;
+  padding-top: 30px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top .header-top-left {
+  display: flex;
+  flex: 1;
+}
+
+.header-top .header-top-left .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.header-top .header-top-left .logo a {
+  display: block;
+  width: 95px;
+}
+
+.header-top .header-top-left .logo a img {
+  max-width: 100%;
+  display: block;
+}
+
+.header-top .header-top-left form {
+  width: 100%;
+}
+
+#search-input.search-page .line {
+  height: 25px;
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+#search-input.search-page svg {
+  padding: 0 8px;
+  height: 25px;
+  color: blue;
+}
+
+.header-top .header-top-right {
+  display: flex;
+  height: 100%;
 }
 
 #footer {
