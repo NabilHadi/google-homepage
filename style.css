@@ -1,5 +1,5 @@
 :root {
-  --google-font-color: #3c4043;
+  --google-font-color: #70757a;
 }
 
 * {
@@ -25,6 +25,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+.text-medium {
+  font-size: 0.9rem;
+  font-weight: 200;
 }
 
 .btn {
@@ -71,7 +76,7 @@ a:hover {
 }
 
 #navbar ul li a {
-  color: var(--google-font-color);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 #navbar ul li a.btn-solid-blue {
@@ -112,7 +117,7 @@ a:hover {
 
 #main-content form #search-input {
   display: block;
-  background: #fafafa;
+  background: #fff;
   height: 40px;
   width: 60%;
   border: 1px #ddd solid;
@@ -142,7 +147,7 @@ a:hover {
   border: 0;
   padding: 10px 20px;
   cursor: pointer;
-  color: var(--google-font-color);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 #main-content #main-language-offered-text a {
@@ -153,9 +158,8 @@ a:hover {
   width: 100%;
 }
 
-#footer h5,
 #footer a {
-  color: gray;
+  color: var(--google-font-color);
 }
 
 #footer #other-bar {
@@ -174,7 +178,7 @@ a:hover {
   display: flex;
 }
 
-#footer #left-content h5,
-#footer #right-content h5 {
+#footer #left-content .text-medium,
+#footer #right-content .text-medium {
   padding: 0 10px;
 }
