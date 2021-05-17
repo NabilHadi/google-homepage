@@ -84,6 +84,8 @@ a:hover {
 }
 
 #navbar ul li a svg {
+  opacity: inherit;
+  display: block;
   height: 25px;
 }
 
@@ -120,17 +122,40 @@ a:hover {
 }
 
 #main-content form #search-input {
-  display: block;
-  background: #fff;
-  height: 40px;
-  width: 60%;
+  display: flex;
+  align-items: center;
   border: 1px #ddd solid;
   border-radius: 20px;
   margin-bottom: 30px;
-  padding: 10px 20px;
+  padding: 0 15px;
+  width: 60%;
 }
 
-#main-content form #search-input:focus {
+#main-content form #search-input a {
+  display: inline-block;
+}
+
+#main-content form #search-input svg {
+  display: block;
+  opacity: 0.5;
+  height: 20px;
+}
+
+#main-content form #search-input svg.mic-btn {
+  opacity: 1;
+  height: 25px;
+}
+
+#main-content form #search-input input {
+  display: block;
+  background: #fff;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: inherit;
+}
+
+#main-content form #search-input input:focus {
   outline: none;
 }
 
