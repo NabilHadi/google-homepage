@@ -58,9 +58,8 @@ svg.icon-m {
   opacity: 1;
 }
 
-.text-small {
+.text-p9 {
   font-size: 0.9rem;
-  font-weight: 200;
 }
 
 .text-medium {
@@ -108,6 +107,7 @@ svg.icon-m {
   font-size: 0.8rem;
   flex-basis: 60px;
   flex-shrink: 1;
+  padding-right: 30px;
 }
 
 #navbar-ul {
@@ -313,6 +313,156 @@ svg.icon-m {
   padding: 0 10px;
 }
 
+.main-result {
+  display: flex;
+  flex: 1;
+  margin-left: 170px;
+}
+
+.main-result-left {
+  flex: 0.8;
+}
+
+.main-result-left .result-time {
+  padding-top: 15px;
+}
+
+.main-result-left .search-result {
+  padding: 20px 0;
+}
+
+.main-result-left .search-result .result-url {
+  color: #000;
+}
+
+.main-result-left .search-result .result-header {
+  font-size: 1.3rem;
+  padding: 8px 0;
+}
+
+.main-result-left .search-result .result-paragraph {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.main-result-left .search-result .result-links {
+  font-size: 0.9rem;
+}
+
+.main-result-left .search-sugguestions {
+  padding: 15px;
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  border-radius: 3px;
+}
+
+.main-result-left .search-sugguestions .search-suggestions-container {
+  padding-top: 10px;
+}
+
+.main-result-left .search-sugguestions .search-suggestions-container .column {
+  display: inline-block;
+}
+
+.main-result-left
+  .search-sugguestions
+  .search-suggestions-container
+  .column
+  > div {
+  padding: 5px;
+}
+
+.main-result-left .search-questions {
+  display: flex;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 100;
+  margin: 15px 0;
+}
+
+.main-result-left .search-questions .questions-header {
+  font-size: 1.2rem;
+  padding: 7px 0;
+}
+
+.main-result-left .search-questions .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0;
+  border-top: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.main-result-left .search-questions .feedback {
+  display: flex;
+  align-items: center;
+}
+
+.main-result-left .search-questions .feedback .line {
+  flex: 1;
+  height: 1px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.main-result-left .search-questions .feedback .feedback-text a {
+  display: block;
+  font-size: 0.8rem;
+  padding-left: 15px;
+  color: var(--google-font-color);
+}
+
+.main-result-left .search-related .related-header {
+  font-size: 1.3rem;
+  padding: 7px 0;
+  color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 15px;
+}
+
+.main-result-left .search-related .related-search-container {
+  display: flex;
+  align-items: stretch;
+}
+
+.main-result-left .search-related .related-search-container .column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 30px;
+}
+
+.main-result-left
+  .search-related
+  .related-search-container
+  .related-search-option {
+  display: flex;
+  flex: 1;
+  background-color: #f1f3f4;
+  padding: 5px 10px 5px 0px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.main-result-left
+  .search-related
+  .related-search-container
+  .related-search-option
+  .icon-container {
+  padding: 5px 30px;
+}
+
+.main-result-left
+  .search-related
+  .related-search-container
+  .related-search-option
+  a {
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.main-result-right {
+  flex: 1;
+}
+
 #footer {
   width: 100%;
 }
@@ -323,7 +473,7 @@ svg.icon-m {
 
 #footer #other-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   line-height: 1.8;
   padding: 10px 20px;
