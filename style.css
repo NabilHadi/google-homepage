@@ -715,7 +715,12 @@ svg.icon-m {
   color: var(--google-font-color);
 }
 
-#footer #location-bar .text-medium {
+#search-result-page #footer #location-bar .text-medium {
+  margin-left: 135px;
+}
+
+#search-result-page #footer #left-content {
+  display: flex;
   margin-left: 135px;
 }
 
@@ -729,7 +734,6 @@ svg.icon-m {
 
 #footer #left-content {
   display: flex;
-  margin-left: 135px;
 }
 
 #footer #right-content {
